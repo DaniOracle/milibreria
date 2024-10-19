@@ -1,8 +1,8 @@
-import { default as React } from 'react';
+import { MouseEventHandler } from 'react';
 export interface MyFavouriteProps {
-    color?: string;
+    color: string;
     disabled?: boolean;
-    onClick?: () => void;
+    onClick?: MouseEventHandler<HTMLButtonElement>;
 }
-declare const MyFavourite: React.FC<MyFavouriteProps>;
+declare function MyFavourite(props: MyFavouriteProps): import("react/jsx-runtime").JSX.Element;
 export default MyFavourite;
