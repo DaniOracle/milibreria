@@ -28807,7 +28807,7 @@ export {
   RU as CustomButton,
   DU as DanielPN,
   wU as MyButton,
-  OU as MyFavouriteBorderIcon,
-  kU as myfavourite
+  kU as MyFavourite,
+  OU as MyFavouriteBorderIcon
 };
 //# sourceMappingURL=index.es.js.map
