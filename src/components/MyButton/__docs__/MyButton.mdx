@@ -1,0 +1,37 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./example.tsx";
+import * as MyButton from "./MyButton.stories";
+
+<Meta of={MyButton} title="MyButton" />
+
+# MyButton
+
+Botón altamente personalizable que permite modificar su color, tamaño, bordes y comportamiento usando un hover.
+
+#### Example
+
+<Canvas of={MyButton.Primary} />
+
+## Usage
+
+```ts
+
+import MyButton from 'milibreria';
+
+function Example() {
+  return (
+    <MyButton
+      text="Primary Button"
+      txtcolor="white"
+      backgroundColor="blue"
+      bordercolor="blue"
+      borderwidth="2px"
+      hoverbackgroundcolor="darkblue"
+      hovertxtColor="lightgray"
+      size="medium"
+      onClick={() => alert("Primary Button Clicked")}
+    />
+  );
+}
+
+export default Example;

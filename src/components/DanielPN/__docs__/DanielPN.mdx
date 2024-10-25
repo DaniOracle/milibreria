@@ -1,0 +1,37 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./example.tsx";
+import * as DanielPN from "./DanielPN.stories";
+
+<Meta of={DanielPN} title="DanielPN Dialog" />
+
+# DanielPN Dialog
+
+Este componente muestra un cuadro de diálogo personalizado con un título, contenido y un botón de cierre.
+
+#### Example: Default Dialog
+
+<Canvas of={DanielPN.Secondary} />
+
+## Usage
+
+```ts
+
+import DanielPN from 'milibreria';
+
+function Example() {
+  return (
+    <DanielPN
+      open={false}
+      onClose={() => console.log("Dialog closed")}
+      title="Diálogo de Ejemplo"
+      content={["Este es un ejemplo de párrafo en el diálogo.", "Este es otro ejemplo de párrafo en el diálogo."]}
+      titleSx={{ color: 'black', fontSize: '20px' }}
+      contentSx={{ fontSize: '16px', color: 'gray' }}
+      dialogSx={{ backgroundColor: 'white' }}
+      width="500px"
+      height="300px"
+    />
+  );
+}
+
+export default Example;

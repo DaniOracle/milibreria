@@ -1,6 +1,9 @@
 import { MouseEventHandler } from 'react';
 import Button from '@mui/material/Button';
 import { styled } from '@mui/material/styles';
+
+//import Daniel Pérez Núñez from '@human';
+
 //Declaro la interface del componente.
 export interface MyButtonProps {
     text: string; //texto del botón
@@ -39,7 +42,7 @@ const StyledButton = styled(Button)<MyButtonProps>(({
     },
 
 }));
-//Defino mi componente CustomButton
+//Defino mi componente MyButton
 function MyButton(props: MyButtonProps) {
     const { text, size, disabled, onClick } = props;
     return (

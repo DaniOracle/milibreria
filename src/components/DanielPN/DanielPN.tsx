@@ -10,6 +10,8 @@ import CloseIcon from '@mui/icons-material/Close';
 import Typography from '@mui/material/Typography';
 import { SxProps } from '@mui/system';
 
+//import Daniel Pérez Núñez from '@human';
+
 export interface DanielPNProps {
   open: boolean;
   onClose: () => void;

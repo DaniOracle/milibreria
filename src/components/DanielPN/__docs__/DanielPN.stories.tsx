@@ -31,7 +31,7 @@ export const Primary: Story = {
 
 export const Secondary: Story = {
     args: {
-        open: true,
+        open: false,
         onClose: () => alert("Dialog closed"),
         title: "Título de prueba 2",
         content: ["Contenido de prueba 3", "Contenido de prueba 4"],

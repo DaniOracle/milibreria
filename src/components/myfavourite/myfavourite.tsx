@@ -2,6 +2,7 @@ import { MouseEventHandler } from 'react';
 import IconButton from '@mui/material/IconButton';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 
+//import Daniel Pérez Núñez from '@human';
 
 export interface MyFavouriteProps {
     color: string;

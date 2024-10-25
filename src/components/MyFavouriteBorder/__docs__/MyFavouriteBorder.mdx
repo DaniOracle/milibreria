@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./example.tsx";
+import * as MyFavouriteBorderIcon from "./MyFavouriteBorder.stories";
+
+<Meta of={MyFavouriteBorderIcon} title="MyFavouriteBorderIcon" />
+
+# MyFavouriteBorderIcon
+
+Componente de botón de icono que muestra un corazón vacío. Permite personalizar el color y la funcionalidad del icono.
+
+#### Example: Default Favourite Border Icon
+
+<Canvas of={MyFavouriteBorderIcon.Primary} />
+
+## Usage
+
+```ts
+import MyFavouriteBorderIcon from 'milibreria';
+
+function Example() {
+  return (
+    <MyFavouriteBorderIcon
+      color="red"
+      onClick={() => alert("FavouriteBorderIcon Clicked")}
+      disabled={false}
+    />
+  );
+}
+
+export default Example;

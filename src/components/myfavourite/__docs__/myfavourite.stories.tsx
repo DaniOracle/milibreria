@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import Example from "./example"; // Importamos el componente MyFavourite
+import Example from "./example";
 
 const meta: Meta<typeof Example> = {
   title: "MyFavourite",
